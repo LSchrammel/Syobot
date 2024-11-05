@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "model:solicitacao_acesso": "ollama create solicitacaoAcesso -f solicitacaoAcesso.Modelfile"
   },
   "dependencies": {
     "@emoji-mart/data": "^1.2.1",

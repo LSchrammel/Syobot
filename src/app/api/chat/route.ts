@@ -21,15 +21,20 @@ export async function POST(req: Request) {
     const image = new URL(imageUrl);
     messageContent.push({ type: 'image', image });
   });
-
+  console.log('lol')
   // Stream text using the ollama model
-  const result = await streamText({
-    model: ollama(selectedModel),
-    messages: [
-      ...convertToCoreMessages(initialMessages),
-      { role: 'user', content: messageContent },
-    ],
-  });
+  try {
+    const result = await streamText({
+      model: ollama(selectedModel),
+      messages: [
+        ...convertToCoreMessages(initialMessages),
+        { role: 'user', content: messageContent },
+      ],
+    });
+    console.log('result')
+    return result.toDataStreamResponse();
+  } catch(e) {
+    console.log(e)
+  }
 
-  return result.toDataStreamResponse();
 }

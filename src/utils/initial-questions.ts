@@ -1,35 +1,17 @@
 export const INITIAL_QUESTIONS = [
   {
-    content: "What is the capital of France?",
+    content: "Qual o e-mail de treinamento?",
   },
   {
-    content: 'Who wrote "To Kill a Mockingbird"?',
+    content: 'Como faço o cadastro de um novo usuário para abrir tickets no Movidesk',
   },
   {
-    content: "What is the boiling point of water in Celsius?",
+    content: "Qual a diferença entre cadastrar um novo ponto focal e cadastrar um usuário para abrir tickets",
   },
   {
-    content: "How many planets are there in our solar system?",
+    content: "Por que devo reforçar sobre LGPD ao cadastrar um usuário no Movidesk",
   },
   {
-    content: "What year did the Titanic sink?",
-  },
-  {
-    content: "Who painted the Mona Lisa?",
-  },
-  {
-    content: "What is the square root of 144?",
-  },
-  {
-    content: "Who is the current President of the United States?",
-  },
-  {
-    content: "What is the tallest mountain in the world?",
-  },
-  {
-    content: "What is the chemical symbol for gold?",
-  },
-  {
-    content: "Who discovered penicillin?",
-  },
+    content: "Quais tipos de alterações um usuário pode solicitar no Movidesk?",
+  }
 ];

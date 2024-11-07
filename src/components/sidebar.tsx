@@ -134,7 +134,7 @@ export function Sidebar({
                 className="dark:invert hidden 2xl:block"
               />
             )}
-            New chat
+            Novo chat
           </div>
           <SquarePen size={18} className="shrink-0 w-4 h-4" />
         </Button>
@@ -190,11 +190,10 @@ export function Sidebar({
                           <DialogHeader className="space-y-4">
                             <DialogTitle>Delete chat?</DialogTitle>
                             <DialogDescription>
-                              Are you sure you want to delete this chat? This
-                              action cannot be undone.
+                              Você tem certeza que deseja excluir esse chat? Essa ação não podera ser revertida.
                             </DialogDescription>
                             <div className="flex justify-end gap-2">
-                              <Button variant="outline">Cancel</Button>
+                              <Button variant="outline">Cancelar</Button>
                               <Button
                                 variant="destructive"
                                 onClick={() => handleDeleteChat(chatId)}

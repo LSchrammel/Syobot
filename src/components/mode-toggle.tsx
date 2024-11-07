@@ -31,6 +31,12 @@ export function ModeToggle() {
             <ChevronDownIcon className="w-5 h-5" />
           </div>
           )}
+          {theme === "syonet" && (
+            <div className=" flex justify-between w-full scale-0 dark:scale-100">
+            <p>Syonet</p>
+            <ChevronDownIcon className="w-5 h-5" />
+          </div>
+          )}
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
@@ -40,6 +46,9 @@ export function ModeToggle() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
           Dark mode
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("syonet")}>
+          Syonet
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

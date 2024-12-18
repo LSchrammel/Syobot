@@ -21,7 +21,7 @@ import { toast } from "sonner"
 
 const formSchema = z.object({
   username: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
+    message: "O nome deve conter 2 caracteres.",
   }),
 });
 
@@ -33,7 +33,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    setName(localStorage.getItem("ollama_user") || "Anonymous");
+    setName(localStorage.getItem("ollama_user") || "Anônimo");
   }, []);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -58,7 +58,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
   return (
     <Form {...form}>
        <div className="w-full flex flex-col gap-4 pt-8">
-       <FormLabel>Theme</FormLabel>
+       <FormLabel>Tema</FormLabel>
         <ModeToggle />
        </div>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -67,7 +67,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
           name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Nome</FormLabel>
               <FormControl>
                 <div className="md:flex gap-4">
                   <Input
@@ -77,7 +77,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
                     onChange={(e) => handleChange(e)}
                   />
                   <Button type="submit">
-                    Change name
+                    Trocar o nome
                   </Button>
                 </div>
               </FormControl>

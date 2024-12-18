@@ -84,7 +84,7 @@ export default function UserSettings() {
             {isLoading ? (
               <Skeleton className="w-20 h-4" />
             ) : (
-              name || "Anonymous"
+              name || "Anônimo"
             )}
           </div>
         </Button>
@@ -98,13 +98,13 @@ export default function UserSettings() {
             <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
               <div className="flex w-full gap-2 p-1 items-center cursor-pointer">
                 <GearIcon className="w-4 h-4" />
-                Settings
+                Configuração
               </div>
             </DropdownMenuItem>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader className="space-y-4">
-              <DialogTitle>Settings</DialogTitle>
+              <DialogTitle>Configuração</DialogTitle>
               <EditUsernameForm setOpen={setOpen} />
             </DialogHeader>
           </DialogContent>

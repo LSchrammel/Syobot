@@ -188,7 +188,7 @@ export default function Home() {
     const username = localStorage.getItem("ollama_user")
     if (username) return setOpen(isOpen)
 
-    localStorage.setItem("ollama_user", "Anonymous")
+    localStorage.setItem("ollama_user", "Anônimo")
     window.dispatchEvent(new Event("storage"))
     setOpen(isOpen)
   }
@@ -215,10 +215,10 @@ export default function Home() {
         />
         <DialogContent className="flex flex-col space-y-4">
           <DialogHeader className="space-y-2">
-            <DialogTitle>Welcome to Ollama!</DialogTitle>
+            <DialogTitle>Bem-vindo ao Syobot!</DialogTitle>
             <DialogDescription>
-              Enter your name to get started. This is just to personalize your
-              experience.
+            Insira seu nome para começar. Isto é apenas para personalizar sua
+            experiência.
             </DialogDescription>
             <UsernameForm setOpen={setOpen} />
           </DialogHeader>

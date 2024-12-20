@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "model:solicitacao_acesso": "ollama create solicitacaoAcesso -f modelfiles/solicitacaoAcesso.Modelfile",
-    "model:central_leads": "ollama create centralLeads -f modelfiles/centralLeads.Modelfile",
-    "model:template_whatsapp": "ollama create templateWhatsapp -f modelfiles/templateWhatsapp.Modelfile"
+    "model:solicitacao_pedido": "ollama create solicitacaoPedido -f modelfiles/solicitacaoPedido.Modelfile"
   },
   "dependencies": {
     "@emoji-mart/data": "^1.2.1",
